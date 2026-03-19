@@ -65,6 +65,10 @@ These files contain the mathematical decomposition of the model’s logic, provi
 * `full_normalized_importances.csv`
   Global ranking of all Boruta-selected features, normalized for cross-model comparison (source for **Figure 5**).
 
+* feature_stability_matrix.csv
+  Selection frequency of all 51 features across cross-validation folds (replaces Table 7 from the original manuscript).
+
+
 ---
 
 ## Usage for Reproduction
