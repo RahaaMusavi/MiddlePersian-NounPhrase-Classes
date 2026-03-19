@@ -53,18 +53,17 @@ These files contain the mathematical decomposition of the model’s logic, provi
 * `per_class_importance_with_direction.csv`
   The master results file. Lists every feature, its importance score per class, and the SHAP direction (Positive/Negative). This is the source for **Table 6**.
 
-* `top_features_[Class_Name].csv`
-  Four files isolating the most predictive features for each morphosyntactic configuration (e.g., *With Ezafe & Head Initial*).
-
 * `spearman_correlation.csv`
-  A correlation matrix showing relationships between structural features (e.g., how `np_depth` correlates with distance).
-
-* `comparative_table.csv`
-  A summary table comparing how predictors change importance across structural environments.
+  A rank correlation matrix comparing the **feature importance profiles** between the four classes. The high coefficients ($\rho > 0.91$) demonstrate that the entire nominal system is governed by a consistent set of structural drivers, supporting the "Dual Stability" model.
 
 * `full_normalized_importances.csv`
-  Global ranking of all Boruta-selected features, normalized for cross-model comparison (source for **Figure 5**).
+  Global ranking of all Boruta-selected features, normalized for cross-model comparison. This provides the data for **Figure 5**.
 
+* `comparative_table.csv`
+  A summary table facilitating the comparison of predictor influence across different structural environments.
+
+* `top_features_[Class_Name].csv`
+  Individual files isolating the top 20 most predictive features for each configuration.
 ---
 
 ## Usage for Reproduction
